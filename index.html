@@ -1,60 +1,48 @@
 <!--#include virtual="/server/html5-header.html" -->
-<!-- Parent-Version: 1.77 -->
-
-<!-- This is the template document for GNU web pages.  We use
-     server side includes (#include) for common elements, for
-     instance, the very first line of the file.  If you're reading
-     this in its expanded form, you can retrieve the original source,
-     with the SSI statements intact, from
-     http://web.cvs.savannah.gnu.org/viewvc/*checkout*/www/server/standards/boilerplate.html?root=www&content-type=text%2Fplain
--->
-
-<!-- Instructions for adapting this boilerplate to a new project: -->
-
-<!-- 1. In the line above starting "Parent-Version:", remove the
-        "$Revision...$" from around the revision number,
-        leaving just Parent-Version: and the number. -->
-
-<!-- 2. Replace "baz" with the name of your project.
-        You should be able to do this with search and replace;
-        making sure that the search is case insensitive and
-        that the case of the replacement matches the case
-        of the string found. In Emacs, query-replace will do this
-        when case-fold-search and case-replace are both non-nil
-        and both search and replacement string are given in lower case. -->
-
-<!-- 3. Of course update the actual information according to your project,
-        such as mailing lists, project locations, and maintainer name.  -->
-
-<!-- 4. You can use the patch-from-parent script to semi-automate
-        merging future changes to the boilerplate with your file:
-        http://web.cvs.savannah.gnu.org/viewvc/*checkout*/www/server/standards/patch-from-parent?root=www&content-type=text%2Fplain
-        -->
-
-<!-- If you would like to make sure your page validates with HTML5, that
-     would be a good thing.  To do that, change the first line from
-     to /server/html5-header.html before trying the validation.  Maybe
-     someday we will be able to make /server/header be HTML5.  -->
-
+<!-- Parent-Version: 1.95 -->
 <title>Nano-Archimedes
 - GNU Project - Free Software Foundation</title>
+<style type="text/css"><!--
+.table { display: table; width: 100%; border: 0; margin: 1em 0 1.5em; }
+.table-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1em 1em 0;
+  border: 0;
+}
+.table-cell h2 { margin: 0; }
+.image1, .image2 { width: 25%; }
+.image1 img, .image2 img {
+  width: 12.5em; max-width: 100%;
+  margin-bottom: .5em;
+}
+.image1 a[href], .image2 a[href] { text-decoration: none; }
+@media (max-width: 50em) {
+  .image1 { display: none; }
+  .image2 { width: 45%; }
+}
+@media (max-width: 35em) {
+  .image2 { display: none; }
+}
+</style>
 <!--#include virtual="/server/gnun/initial-translations-list.html" -->
 <!--#include virtual="/server/banner.html" -->
-<table cellpadding="0" cellspacing="0" border="0" width="100%" style="border: 0px;">
-<tr>
-<td align="center" valign="middle" style="border: 0px; padding: 1.5em;">
-<a href="http://www.nano-archimedes.com" >
-<img src="Fermi_hole.png" width="200" height="135" alt="" /><br />
-Fermi (exchange-correlation) hole in the reduced phase space, a typical signature of the Pauli exclusion principle.
-</a></td>
-<td align="center" valign="middle" style="border: 0px; padding: 1.5em;"><h2>GNU Nano-Archimedes</h2></td>
-<td align="center" valign="middle" style="border: 0px; padding: 1.5em;">
-<a href="http://www.nano-archimedes.com" >
-<img src="solotronics.png" width="201" height="114" alt="" /><br />
-Solotronics in the Wigner formulation of quantum mechanics, a wave-packet moving in a region of single dopants.
-</a></td>
-</tr>
-</table>
+<div class="table">
+  <div class="table-cell image1">
+    <a href="http://www.nano-archimedes.com" >
+    <img src="Fermi_hole.png" width="200" alt="" /><br />
+    <small>Fermi (exchange-correlation) hole in the reduced phase space,
+    a typical signature of the Pauli exclusion principle.</small></a>
+  </div>
+  <div class="table-cell"><h2>GNU Nano-Archimedes</h2></div>
+  <div class="table-cell image2">
+    <a href="http://www.nano-archimedes.com" >
+    <img src="solotronics.png" width="201" alt="" /><br />
+    <small>Solotronics in the Wigner formulation of quantum mechanics, a
+    wave-packet moving in a region of single dopants.</small></a>
+  </div>
+</div>
 
 <h3>Introduction to nano-archimedes</h3>
 <p>nano-archimedes is a Technology Computer Aided Design tool (TCAD)
@@ -272,7 +260,7 @@ to <a href="mailto:didier@famille-link.fr">&lt;didier@famille-link.fr&gt;</a>.</
 
 <p>Please see the <a
 href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting translations
+README</a> for information on coordinating and contributing translations
 of this article.</p>
 </div>
 
@@ -296,14 +284,14 @@ of this article.</p>
 <p>Copyright &copy; 2014 Free Software Foundation, Inc.</p>
 
 <p>This page is licensed under a <a rel="license"
-href="http://creativecommons.org/licenses/by-nd/3.0/us/">Creative
-Commons Attribution-NoDerivs 3.0 United States License</a>.</p>
+href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivs 4.0 International License</a>.</p>
 
 <!--#include virtual="/server/bottom-notes.html" -->
 
 <p class="unprintable">Updated:
 <!-- timestamp start -->
-$Date: 2016/06/01 19:18:39 $
+$Date: 2021/01/03 17:47:23 $
 <!-- timestamp end -->
 </p>
 </div>
